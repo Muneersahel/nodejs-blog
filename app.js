@@ -9,7 +9,8 @@ const app = express();
 const PORT = 3000;
 
 // connect to mongodb
-const dbURI = process.env.dbURI;
+const dbURI =
+  "mongodb+srv://node-user:aPw9mVLWR7Rz9ZW@cluster0.ub01n.mongodb.net/nodejs-blog?retryWrites=true&w=majority";
 mongoose
   .connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then((result) => {
